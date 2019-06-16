@@ -1,0 +1,3 @@
+// @flow
+
+module.exports = function (ref: { current: HTMLElement | null }, eventName: string, eventHandler: Event => void): void {};

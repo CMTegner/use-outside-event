@@ -1,0 +1,58 @@
+{
+  "name": "use-outside-event",
+  "version": "1.0.0",
+  "description": "A React.js hook which lets you react to DOM events that happen outside a specified element",
+  "main": "use-outside-event.js",
+  "scripts": {
+    "jest": "jest --coverage",
+    "eslint": "eslint .",
+    "test": "npm run eslint && npm run jest",
+    "travis": "npm run eslint && npm run jest -- --coverageReporters=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CMTegner/use-outside-event.git"
+  },
+  "files": [
+    "use-outside-event.js",
+    "use-outside-event.js.flow"
+  ],
+  "keywords": [
+    "react",
+    "hook",
+    "clickoutside"
+  ],
+  "author": "Christian Tegnér <christian.tegner@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMTegner/use-outside-event/issues"
+  },
+  "homepage": "https://use-outside-event.cmtegner.now.sh",
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "acorn": "^6.1.1",
+    "acorn-jsx": "^5.0.1",
+    "coveralls": "^3.0.6",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "espree": "^5.0.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
